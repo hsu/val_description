@@ -50,3 +50,8 @@ catkin_package(
 )
 
 add_custom_target(val_description_media_files ALL DEPENDS ${urdf_files})
+
+# Install stuff
+install(DIRECTORY meshes/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes
+)
