@@ -55,3 +55,12 @@ add_custom_target(val_description_media_files ALL DEPENDS ${urdf_files})
 install(DIRECTORY meshes/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes
 )
+install(DIRECTORY materials/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/materials
+)
+install(DIRECTORY urdf/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+)
+install(DIRECTORY robots/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/robots
+)
