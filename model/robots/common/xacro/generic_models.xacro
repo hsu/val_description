@@ -81,25 +81,6 @@
     </link>
   </xacro:macro>
 
-  <xacro:macro name="virtual_link_sphere" params="name radius mass origin_xyz origin_rpy">
-    <link name="${name}">
-      <inertial>
-        <mass value="${mass}" />
-        <origin rpy="${origin_rpy}" xyz="${origin_xyz}"/>
-        <inertia ixx="${2*mass*radius*radius/5}" ixy="0.0" ixz="0.0"
-                 iyy="${2*mass*radius*radius/5}" iyz="0.0"
-                 izz="${2*mass*radius*radius/5}" />
-      </inertial>
-      <visual>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry>
-          <sphere radius="${radius}"/>
-        </geometry>
-        <material name="Gray"/>
-      </visual>
-    </link>
-  </xacro:macro>
-
   <xacro:property name="virtual_link_mass" value="0.1"/>
   <xacro:property name="virtual_link_radius" value="0.05"/>
   <xacro:property name="virtual_link_height" value="0.05"/>

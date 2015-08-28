@@ -71,16 +71,16 @@ add_custom_target(val_description_media_files ALL DEPENDS ${urdf_files} ${instan
 
 # install urdf and xacro files
 install(DIRECTORY model/materials/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/materials
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/model/materials
 )
 install(DIRECTORY model/meshes/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/model/meshes
 )
 install(DIRECTORY model/robots/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/robots
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/model/robots
 )
 install(DIRECTORY model/urdf/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/model/urdf
 )
 
 install(DIRECTORY instance/instances/instance_files 
