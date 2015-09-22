@@ -84,6 +84,10 @@ install(DIRECTORY model/robots/
 install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/model/urdf/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
 )
+# also install multisense_sl.urdf
+install(DIRECTORY model/urdf/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+)
 
 install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/instance/instances/instance_files 
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/instance_files)
