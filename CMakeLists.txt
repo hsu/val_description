@@ -86,12 +86,11 @@ install(DIRECTORY model/meshes/
 install(DIRECTORY model/robots/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/model/robots
 )
+install(DIRECTORY model/urdf/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/model/urdf
+)
 install(DIRECTORY ${URDF_OUTPUT_PATH}
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-# also install multisense_sl.urdf
-install(DIRECTORY model/urdf/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
 )
 
 install(DIRECTORY ${INSTANCE_OUTPUT_PATH}
